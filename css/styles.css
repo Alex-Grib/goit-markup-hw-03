@@ -293,10 +293,11 @@ address {
   align-items: center;
 }
 .clients-list-item {
-  margin-right: 30px;
-
   width: 170px;
   height: 90px;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients-border {
@@ -413,7 +414,11 @@ address {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-
+.button:hover,
+button:focus {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
+}
 /* оформление кнопок портфолио */
 
 .projects-button {
