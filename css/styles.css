@@ -167,6 +167,9 @@ address {
 }
 
 /* Оформлнение абзацев текста в секции наши особенности  */
+.services {
+  padding-top: 94px;
+}
 
 .services-list {
   display: flex;
@@ -200,20 +203,22 @@ address {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.services-icon {
-  padding-top: 94px;
-}
+
 .services-icon:not(:last-child) {
   margin-right: 30px;
 }
 /* Оформление секции ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work-list {
   display: flex;
 }
 
 .work-tittle {
   margin-bottom: 50px;
-  padding-top: 94px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -235,9 +240,13 @@ address {
   margin-right: 30px;
 }
 /* оформление секции НАША КОМАНДА */
+.clients {
+  padding-top: 94px;
+}
 
 .section-team {
   background-color: var(--secondary-white-color);
+  padding-top: 94px;
 }
 .team-list {
   display: flex;
