@@ -303,6 +303,12 @@ address {
   padding-bottom: 24px;
 }
 
+.logo-social:hover,
+.logo-social:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-white-color);
+}
+
 /* Оформление секции наши клиенты */
 
 .clients-list {
