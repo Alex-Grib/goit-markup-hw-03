@@ -239,6 +239,10 @@ address {
 .work-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.work-picture {
+  display: block;
+}
+
 /* оформление секции НАША КОМАНДА */
 .clients {
   padding-top: 94px;
