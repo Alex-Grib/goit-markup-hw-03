@@ -227,6 +227,12 @@ address {
 }
 
 .work-tittle-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
