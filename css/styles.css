@@ -56,7 +56,7 @@ body {
 } */
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -165,8 +165,15 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+/* Задает общие отсупы секциям кроме героя */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Оформлнение абзацев текста в секции наши особенности  */
+
 .services {
   padding-top: 94px;
 }
@@ -204,20 +211,20 @@ address {
   padding-bottom: 25px;
 }
 
+.services-icon {
+  width: 270px;
+}
+
 .services-icon:not(:last-child) {
   margin-right: 30px;
 }
 /* Оформление секции ЧЕМ МЫ ЗАНИМАЕМСЯ */
-.work {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .work-list {
   display: flex;
 }
 
-.work-tittle {
+.section-tittle {
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -242,6 +249,10 @@ address {
   text-transform: uppercase;
 }
 
+.work-list-item {
+  width: 370px;
+}
+
 .work-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -250,17 +261,12 @@ address {
 }
 
 /* оформление секции НАША КОМАНДА */
-.clients {
-  padding-top: 94px;
-}
 
 .section-team {
   background-color: var(--secondary-white-color);
-  padding-top: 94px;
 }
 .team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .team {
@@ -287,6 +293,8 @@ address {
   margin-right: 30px;
 }
 .team-card {
+  width: 270px;
+
   background-color: var(--primary-white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -314,7 +322,7 @@ address {
 .clients-list {
   display: flex;
   padding-top: 50px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   align-items: center;
 }
 .clients-list-item {
@@ -356,6 +364,7 @@ address {
 .footer-logotype {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 69px;
 }
 
 .logo-footer {
@@ -446,10 +455,6 @@ button:focus {
 }
 /* оформление кнопок портфолио */
 
-.projects-button {
-  margin-bottom: 34px;
-}
-
 .button-list {
   margin-right: 8px;
 }
@@ -477,9 +482,11 @@ button:focus {
 }
 
 /* оформление секции проекты страницы ПОРТФОЛИО */
-.portfolio {
-  margin-bottom: 93px;
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
+
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -492,7 +499,7 @@ button:focus {
 
 .projects-list {
   outline: 1px solid #eeeeee;
-  width: 360px;
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
