@@ -342,6 +342,7 @@ address {
 
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-list-second {
