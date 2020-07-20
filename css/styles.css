@@ -234,11 +234,9 @@ address {
 }
 
 .work-tittle-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
 
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -321,8 +319,6 @@ address {
 
 .clients-list {
   display: flex;
-  padding-top: 50px;
-  /* padding-bottom: 94px; */
   align-items: center;
 }
 .clients-list-item {
@@ -346,26 +342,26 @@ address {
   padding-right: 63px;
 }
 /* оформление футера */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer-list {
   display: flex;
   align-items: baseline;
 }
-
+.footer-logotype {
+  width: 300px;
+}
 .footer-list-second {
   display: block;
   justify-content: center;
   margin-left: 69px;
-  padding-top: 72px;
-  padding-bottom: 100px;
+  width: 300px;
 }
 
 /* Логотип футер */
-.footer-logotype {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 69px;
-}
 
 .logo-footer {
   color: white;
@@ -381,7 +377,9 @@ address {
 /* оформление адресса в футере */
 
 .address-map {
+  display: inline-block;
   margin-top: 20px;
+  padding-bottom: 9px;
 
   color: var(--primary-white-color);
   font-weight: 400;
@@ -390,10 +388,15 @@ address {
 }
 
 .address-info {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address-info:not(:last-child) {
+  padding-bottom: 9px;
 }
 
 .sign-up {
@@ -426,7 +429,9 @@ address {
 }
 
 /* оформление кнопки главной страницы */
+
 .hero-text {
+  display: flex;
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 10px;
@@ -434,19 +439,19 @@ address {
 }
 
 .button {
-  display: inline-block;
   margin-left: 500px;
+  min-width: 200px;
   margin-bottom: 200px;
-  width: 200;
-  height: 50px;
-  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  background-color: var(--accent-color);
+  letter-spacing: 0.06em;
+
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .button:hover,
 button:focus {
@@ -511,9 +516,14 @@ button:focus {
   margin-bottom: 0;
 }
 
-.projects-title {
-  padding-left: 24px;
+.projects-container {
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projects-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -522,9 +532,6 @@ button:focus {
 }
 
 .projects-link {
-  padding-left: 24px;
-
-  padding-bottom: 20px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
