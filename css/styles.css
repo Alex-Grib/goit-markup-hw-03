@@ -148,22 +148,22 @@ address {
 .hero {
   background-color: var(--fotter-bcg-color);
 }
-
+.hero-container {
+  text-align: center;
+}
 .hero-tittle {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 30px;
-
   color: var(--primary-white-color);
-  width: 696px;
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Задает общие отсупы секциям кроме героя */
 
@@ -431,24 +431,22 @@ address {
 /* оформление кнопки главной страницы */
 
 .hero-text {
-  display: flex;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.button {
-  margin-left: 500px;
-  min-width: 200px;
-  margin-bottom: 200px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+.button {
+  display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
+  margin-bottom: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: 3;
+
+  border: none;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
